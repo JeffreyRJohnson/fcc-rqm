@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css?family=Dancing+Script:700');
+
+@font-face {
+  font-family: 'Dancing Script', cursive;
+  src: url('https://fonts.googleapis.com/css?family=Dancing+Script:700');
+}
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  // This defines what 1rem is
+  font-size: 62.5%; // 1rem = 10px/16px = 62.5%
+}
+
+body {
+  font-family: 'Dancing Script', cursive;
+  box-sizing: border-box;
+  // background: black;
+  // Typography
+  font-weight: 700;
+}
+
+.hero-image {
+  background-image: url('./paper.jpeg');
+  height: 100vh;
+  background-position: center bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.quoteContainer {
+  // display: inline;
+  padding: 10% 2rem 0 2rem;
+  // outline: 2px solid red;
+
+  @media (min-width: 600px) {
+    padding: 5% 6rem 0 6rem;
+  }
+}
+
+.quoteText {
+  // position: absolute;
+  // left: 0;
+  // right: 0;
+  text-align: center;
+  font-size: 3rem;
+  font-family: 'Dancing Script', cursive;
+}
+
+.quoteAuthor {
+  position: relative;
+  text-align: center;
+  left: 0;
+  right: 0;
+  padding: 2rem;
+  font-size: 3.2rem;
+  font-family: 'Dancing Script', cursive;
+}
+
+.button-container {
+  position: absolute;
+  top: 90%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  // justify-content: center;
+  // align-items: center;
+  // text-align: center;
+}
+
+button {
+  // border-radius: 0.7rem;
+  background-color: transparent;
+  border: none;
+  // color: black;
+  // padding: 1.6rem 3.2rem;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 1.8rem;
+  font-family: 'Dancing Script', cursive;
+  cursor: pointer;
+
+  &:hover {
+    color: white;
+  }
+
+  &:visited,
+  &:enabled {
+    color: black;
+    outline: none;
+  }
+}
+
+button:nth-child(2) {
+  margin-left: 3.2rem;
+}
